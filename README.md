@@ -1,6 +1,8 @@
 [![fmAutoMate logo][fmAutoMate logo]][fmAutomate home]
 
 # fmAutoMate
+[Towards a FileMaker IDE]
+
 A tool for FileMaker developers from MrWatson which extends and automates your script workspace using the MBS Plugin and MrWatsons fmScriptWorkspace Module
 
 
