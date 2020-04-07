@@ -24,6 +24,8 @@ A tool for FileMaker developers from MrWatson which extends and automates your s
 
 Click a menu item and have fun developing in an increasingly integrated environment!
 
+Please note that fmAutoMate is in the stage !! proof of concept !! - See the wiki for known issues.
+
 MrWatson
 
 [![mrwatson.de][mrwatson.de logo]][mrwatson.de]
