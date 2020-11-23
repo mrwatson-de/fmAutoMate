@@ -1,4 +1,4 @@
-[![fmAutoMate logo][fmAutoMate logo]][fmAutomate home]
+[![fmAutoMate logo][fmAutoMate logo]][fmAutoMate home]
 
 # fmAutoMate
 [Towards a FileMaker IDE]
@@ -8,14 +8,15 @@ A tool for FileMaker developers from MrWatson which extends and automates your s
 
 ## Links
 
-- [fmAutomate home][fmAutomate home]
-- [fmAutomate repo][fmAutomate repo]
+- [fmAutoMate home][fmAutoMate home]
+- [fmAutoMate wiki][fmAutoMate wiki]
+- [fmAutoMate repo][fmAutoMate repo]
 
 
 ## Quickstart
 
 1. First up, get yourself the latest [MBS Plugin][MBS Plugin]
-2. Download fmAutoMate from [Github][fmAutomate repo]
+2. Download fmAutoMate from [Github][fmAutoMate repo]
 3. Open fmAutoMate in FileMaker Pro
 4. Press the fmAutoMate button to define your fmAutoMate context menu
 5. Open up a script in your Script Workspace, for example, by pressing the [Edit Test Script] button :D
@@ -30,8 +31,9 @@ MrWatson
 
 [![mrwatson.de][mrwatson.de logo]][mrwatson.de]
 
-[fmAutomate home]:https://www.fmworkmate.com/fmautomate
-[fmAutomate repo]:https://github.com/mrwatson-de/fmAutoMate
+[fmAutoMate home]:https://www.fmworkmate.com/fmautomate
+[fmAutoMate wiki]:https://github.com/mrwatson-de/fmAutoMate/wiki
+[fmAutoMate repo]:https://github.com/mrwatson-de/fmAutoMate
 [fmAutoMate logo]:fmAutoMate_Logo_256_sm.png
 [MBS Plugin]:https://www.monkeybreadsoftware.com/filemaker/
 [mrwatson.de logo]:www.mrwatson.de_neon_256.png
