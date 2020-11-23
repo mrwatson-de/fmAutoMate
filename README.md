@@ -3,7 +3,7 @@
 # fmAutoMate
 [Towards a FileMaker IDE]
 
-A tool for FileMaker developers from MrWatson which extends and automates your script workspace using the MBS Plugin and MrWatsons fmScriptWorkspace Module
+A tool for FileMaker developers from MrWatson which extends and automates your script workspace using the MBS-Plugin and MrWatsons fmScriptWorkspace Module
 
 Copyright © 2020 MrWatson of www.mrwatson.de ([LICENSE](LICENSE))
 
@@ -15,7 +15,7 @@ Copyright © 2020 MrWatson of www.mrwatson.de ([LICENSE](LICENSE))
 
 ## Quickstart
 
-1. First up, get yourself the latest [MBS Plugin][MBS Plugin]
+1. First up, get yourself the latest [MBS-Plugin][MBS-Plugin]
 2. Download fmAutoMate from [Github][fmAutoMate repo]
 3. Open fmAutoMate in FileMaker Pro
 4. Press the fmAutoMate button to define your fmAutoMate context menu
@@ -34,6 +34,6 @@ MrWatson
 [fmAutoMate home]:https://www.fmworkmate.com/fmautomate
 [fmAutoMate repo]:https://github.com/mrwatson-de/fmAutoMate
 [fmAutoMate logo]:fmAutoMate_Logo_256_sm.png
-[MBS Plugin]:https://www.monkeybreadsoftware.com/filemaker/
+[MBS-Plugin]:https://www.monkeybreadsoftware.com/filemaker/
 [mrwatson.de logo]:www.mrwatson.de_neon_256.png
 [mrwatson.de]:http://www.mrwatson.de
