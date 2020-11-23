@@ -10,6 +10,7 @@ Copyright © 2020 MrWatson of www.mrwatson.de ([LICENSE](LICENSE))
 ## Links
 
 - [fmAutoMate home][fmAutoMate home]
+- [fmAutoMate wiki][fmAutoMate wiki]
 - [fmAutoMate repo][fmAutoMate repo]
 
 
@@ -32,6 +33,7 @@ MrWatson
 [![mrwatson.de][mrwatson.de logo]][mrwatson.de]
 
 [fmAutoMate home]:https://www.fmworkmate.com/fmautomate
+[fmAutoMate wiki]:https://github.com/mrwatson-de/fmAutoMate/wiki
 [fmAutoMate repo]:https://github.com/mrwatson-de/fmAutoMate
 [fmAutoMate logo]:fmAutoMate_Logo_256_sm.png
 [MBS-Plugin]:https://www.monkeybreadsoftware.com/filemaker/
