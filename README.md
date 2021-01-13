@@ -15,6 +15,8 @@ Now you have it! Have fun!
 
 MrWatson
 
+![mrwatson.de logo][mrwatson.de logo]
+
 P.S. Since fmAutoMate has been in successful use for over a year(*) I consider it no longer a proof-of-concept thing, but rather a beta, which means...
 
 - You are welcome to contribute - menu items - ideas - code!
@@ -95,5 +97,5 @@ The best way to learn is by looking at the existing functions.
 [fmAutoMate repo]:https://github.com/mrwatson-de/fmAutoMate
 [fmAutoMate logo]:fmAutoMate_Logo_256_sm.png
 [MBS-Plugin]:https://www.monkeybreadsoftware.com/filemaker/
-[mrwatson.de logo]:www.mrwatson.de_neon_256.png
+[mrwatson.de logo]:www.mrwatson.de_neon_128.png
 [mrwatson.de]:http://www.mrwatson.de
