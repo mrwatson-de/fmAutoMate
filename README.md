@@ -63,7 +63,7 @@ If this interferes with your other apps
 Turn HotKeys off 
 
   - Right Click on a script step
-  - Choose fmAutoMate > HotKeys On
+  - Choose fmAutoMate > HotKeys Off
 
 or
 
