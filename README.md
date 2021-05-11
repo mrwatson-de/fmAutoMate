@@ -24,6 +24,8 @@ P.S. Since fmAutoMate has been in successful use for over a year(*) I consider i
 
 (*) at least by me, and possibly even somebody else ;-]
 
+P.P.S. Version 0.13 of fmAutoMate now uses MBS Plugin version 11.2.0.07 to improve the search function to find the correct line - even when the script has multi-line comments - so make sure you are up to date!
+
 ## Quickstart
 
 1. First up, get yourself the latest [MBS-Plugin][MBS-Plugin]
