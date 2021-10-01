@@ -72,7 +72,8 @@ Click a menu item and have fun developing in an increasingly integrated environm
 
 ## Dependencies
 
-- A Mac (Sorry Win-guys, there's nothing I can do)
+- A Mac (Required)
+  - Sorry Win-guys, there's nothing I can do to change this.
 - FileMaker (Required)
 - [MBS-Plugin][MBS-Plugin] (Required)
   - Version 0.13 of fmAutoMate now uses MBS Plugin version 11.2.0.07 to improve the search function to find the correct line - even when the script has multi-line comments - so make sure you are up to date!
