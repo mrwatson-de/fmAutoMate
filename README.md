@@ -58,10 +58,10 @@ P.S. Since fmAutoMate has been in successful use for over a year(*) I consider i
 ## Quickstart
 
 1. First up, get yourself the latest [MBS-Plugin][MBS-Plugin]
-2. Download fmAutoMate from the [latest release on Github][fmAutoMate releases]
-   - (The release zip contains the pretty Mac file icons, which the Code zip lacks)
+2. Download `fmAutoMate.zip` from the [latest release on Github][fmAutoMate releases]
+   > Note: The release zip contains the pretty Mac file icons, which the `Code > Download zip file` lacks
 4. Unzip and copy the fmAutoMate folder to your Applications folder, or to anywhere on your drive
-   - If you have [fmWorkMate][fmWorkMate home] and would like to be able to start fmAutoMate from the fmWorkMate toolbox, place the fmAutoMate folder *next to* the fmWorkMate folder!
+   > Note: If you have [fmWorkMate][fmWorkMate home] and would like to be able to start fmAutoMate from the fmWorkMate toolbox, place the fmAutoMate folder *next to* the fmWorkMate folder!
 5. Open fmAutoMate in FileMaker Pro
 6. Press the fmAutoMate button to define your fmAutoMate context menu
 7. Open up a script in your Script Workspace, for example, by pressing the [Edit Test Script] button :D
