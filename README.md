@@ -40,7 +40,11 @@ Or a menu in the script workspace where you can:
 
 Yeah?
 
-Well, now you have it! Have fun!
+Well, now you have it!
+
+Not only that, but also [fmAutoMate-Service extensions](fmAutoMate-Service/README.md) for your calculation editor!
+
+Have fun!
 
 MrWatson
 
