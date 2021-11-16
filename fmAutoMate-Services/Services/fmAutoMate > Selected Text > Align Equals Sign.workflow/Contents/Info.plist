@@ -12,7 +12,7 @@
 			<key>NSMenuItem</key>
 			<dict>
 				<key>default</key>
-				<string>fmAutoMate &gt; Align Equals Sign</string>
+				<string>fmAutoMate &gt; Selected Text &gt; Align Equals Sign</string>
 			</dict>
 			<key>NSMessage</key>
 			<string>runWorkflowAsService</string>
