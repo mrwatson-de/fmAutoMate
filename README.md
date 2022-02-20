@@ -16,7 +16,22 @@ Or a menu in the script workspace where you can:
 - Search and Replace (variable names, field names, table names, etc...)
 - Open Scripts in *other* files (you know, that thing that ⌘+Click *should* do - but doesn't)
 - Copy script steps *directly* between local and remote databases (using Xut, Xopy & PaXte)
-- Insert a history comment that *automatically enters the date and author* - in *your* desired format?
+- Insert a history comment that 
+  - *automatically enters the date and author*
+  - in *your* desired format?
+  - and that remembers it ready for the next script!
+- Insert pseudo-code
+  ```
+  $r=0
+  $i=1
+  $n=10
+  Loop
+    Exit Loop If [ $i > $n ]
+    $r=$r+$i
+    $i=$i+1
+  End Loop
+  Set Field [ _fmAutoMate::_gResult ; $r ]
+  ```
 - Save/load/insert code snippets
 - Generate code automatically
   - by 'multiplying' steps by the values on the clipboard (seeing is believing!)
