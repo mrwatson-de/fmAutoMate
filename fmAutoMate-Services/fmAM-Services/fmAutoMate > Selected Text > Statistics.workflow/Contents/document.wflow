@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMApplicationBuild</key>
+	<string>512</string>
+	<key>AMApplicationVersion</key>
+	<string>2.10</string>
+	<key>AMDocumentVersion</key>
+	<string>2</string>
+	<key>actions</key>
+	<array>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run JavaScript.action</string>
+				<key>ActionName</key>
+				<string>Run JavaScript</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>source</key>
+					<string>/* StatisticsService to analyse the selected text and return useful statistics about the characters and EOLs.
+
+20220916 MrW Renamed to Statistics, changed icon to info icon
+20211123 MrW First attempt*/function run(input, parameters) {		msg =  analyse_text(input[0]);		if (!msg) {return''} ;	var app = Application.currentApplication()	app.includeStandardAdditions = true	app.displayDialog(msg,{buttons: ["OK"]})}/*SOME USEFUL CHARACTERS AND CODE POINTS\r = CR = return = FM EOL\n = LF = new line = *NIEOL\r\n = CRLF = Windows EOL\u2028 = LS = line separator\u2029 = PS = paragraph separator|\u2028|\u2029TESTME/FIXME ...        🤯😀🤯😀🤯😀🤯😀🤯😀🤯😀🤯😀1000 ‰‰‰‰‰‰‰‰‰‼️*/function analyse_text (str) {	crlfCount = matchCount( str , /\r\n/g ) ;	crCount   = matchCount( str , /\r/g ) - crlfCount ;	lfCount   = matchCount( str , /\n/g ) - crlfCount ;	tabCount  = matchCount( str , /\t/g ) ;	wsCount   = matchCount( str , /\s/g ) ;		ctrlCount = matchCount( str , /[\u0001-\u0008]/g ) ; /* FIXME */		xmlCount  = matchCount( str , /[^\u0009\u000A\u000D\u0020-\uD7FF\uE000-\uFFFD\u10000-x10FFFF]/g );		emojiCount       = matchCount( str , /([\u2000-\u3300]|\ud83c[\ud000-\udfff]|\ud83d[\ud000-\udfff]|\ud83e[\ud000-\udfff])/g ); /* FIXME */		ascii0Count      = matchCount( str , /[\u0000]/g );	asciiCount       = matchCount( str , /[\u0001-\u00FF]/g );	bmpCount         = matchCount( str , /[\u0000-\uD7FF|\uE000-\uFFFF]/g );    hiSurrogateCount = matchCount( str , /[\uD800-\uDBFF]/g );    loSurrogateCount = matchCount( str , /[\uDC00-\uDFFF]/g );	utf16Plane0Count = matchCount( str , /[\u100-\uFFFF]/g );		//utf16Plane1Count = matchCount( str , /[\u10000-\u1FFFF]/g );      /* FIXME */	//utf16Plane2AndUpCount = matchCount( str , /[\u20000-\u2FFFF]/g ); /* FIXME */			startLen = 8;	try {	  hex = utf8ToHex(str.substr(0,startLen));	} catch {		try {		  hex = utf8ToHex(str.substr(0,startLen+1));		} catch {			try {			  hex = utf8ToHex(str.substr(0,startLen+2));			} catch {			  hex = ''			}		}	}		msg =	  (hex?'Hex:\t\t' + hex + (str.length&gt; startLen?'…':'') + '\r':'') +	  'Length:\t' + str.length + ' UTF16 code points' + '\r' +  	  'Analysis:\r' +	  output( crlfCount, 'CRLF = \\r\\n = return/new line = Windows EOL' ) +	  output( lfCount, 'LF = \\n = new line = *NIX EOL' ) +	  output( crCount, 'CR = \\r = return = FM EOL' ) +	  output( tabCount, 'TAB = \\t' ) +	  output( wsCount, 'white space chars' ) +	  output( ascii0Count, 'ASCII NULL 👀 (0x00)' ) +	  output( asciiCount, 'ASCII (0x01-0xFF)' ) +	  output( xmlCount, 'illegal XML characters' ) +	  output( bmpCount, 'Unicode BMP (0x0000-0xD7FF,0xE0000-0xFFFF)' ) +	  output( hiSurrogateCount, 'hi-surrogates (0xD800-0xDBFF)' ) +	  output( loSurrogateCount, 'lo-surrogates (0xDC00-0xDFFF)' ) +	  output( emojiCount, 'emoji' ) +	  	  //output( utf16Plane1Count + ' Unicode SMP (0x10000-0x1FFFF)' ) +	  //output( utf16Plane2AndUpCount, 'Unicode SMP (0x10000-0x10FFFF)' ) +	        '\r🚧 FUNCTION STILL UNDER CONSTRUCTION 🚧';	return msg;}const output = (n, msg) =&gt; {    return (n?n + (n&lt;1000?'\t\t':'\t' ) + msg + '\r' :'');};const matchCount = (str, re) =&gt; {    return str?.match(re)?.length ?? 0;};	function utf8ToHex(str) {    return Array.from(str).map(c =&gt;       c.charCodeAt(0) &lt; 128 ? c.charCodeAt(0).toString(16) :       encodeURIComponent(c).replace(/\%/g,'').toLowerCase()    ).join(' ');}</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.RunJavaScript</string>
+				<key>CFBundleVersion</key>
+				<string>1.0</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunJavaScriptAction</string>
+				<key>InputUUID</key>
+				<string>76C6BC5D-62A3-4B0B-BC3C-6B41BCC18314</string>
+				<key>Keywords</key>
+				<array>
+					<string>Run</string>
+					<string>JavaScript</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>030EE060-084F-4FB2-B377-30746A61DB42</string>
+				<key>UUID</key>
+				<string>D3E4E2AB-B9DC-4C2D-A00B-73132F49FD8B</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>function run(input, parameters) {
+	
+	// Your script goes here
+
+	return input;
+}</string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>679.500000:368.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run JavaScript.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+	</array>
+	<key>connectors</key>
+	<dict/>
+	<key>variables</key>
+	<array>
+		<dict>
+			<key>UUID</key>
+			<string>47FBEAC5-0E2C-439B-90A0-FE9317FD480B</string>
+			<key>identifier</key>
+			<string>com.apple.Automator.Variable.Storage</string>
+			<key>name</key>
+			<string>Msg</string>
+		</dict>
+	</array>
+	<key>workflowMetaData</key>
+	<dict>
+		<key>applicationBundleIDsByPath</key>
+		<dict/>
+		<key>applicationPaths</key>
+		<array/>
+		<key>inputTypeIdentifier</key>
+		<string>com.apple.Automator.text</string>
+		<key>outputTypeIdentifier</key>
+		<string>com.apple.Automator.text</string>
+		<key>presentationMode</key>
+		<integer>11</integer>
+		<key>processesInput</key>
+		<false/>
+		<key>serviceInputTypeIdentifier</key>
+		<string>com.apple.Automator.text</string>
+		<key>serviceOutputTypeIdentifier</key>
+		<string>com.apple.Automator.text</string>
+		<key>serviceProcessesInput</key>
+		<false/>
+		<key>systemImageName</key>
+		<string>NSTouchBarGetInfoOutline</string>
+		<key>useAutomaticInputType</key>
+		<false/>
+		<key>workflowTypeIdentifier</key>
+		<string>com.apple.Automator.servicesMenu</string>
+	</dict>
+</dict>
+</plist>
