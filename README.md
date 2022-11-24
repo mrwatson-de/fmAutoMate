@@ -16,11 +16,11 @@ Or a menu in the script workspace where you can:
 - Search and Replace (variable names, field names, table names, etc...)
 - Open Scripts in *other* files (you know, that thing that ⌘+Click *should* do - but doesn't)
 - Copy script steps *directly* between local and remote databases (using Xut, Xopy & PaXte)
-- Insert a history comment that 
+- [Insert a history comment](https://github.com/mrwatson-de/fmAutoMate/wiki/How-to#insert-a-history-comment) that 
   - *automatically enters the date and author*
   - in *your* desired format?
   - and that remembers it ready for the next script!
-- Insert pseudo-code
+- [Insert pseudo-code](https://github.com/mrwatson-de/fmAutoMate/wiki/How-to#insert-pseudocode)
   ```
   $r=0
   $i=1
@@ -32,6 +32,7 @@ Or a menu in the script workspace where you can:
   End Loop
   Set Field [ _fmAutoMate::_gResult ; $r ]
   ```
+  - Take a look at the [original twitter footage](https://twitter.com/mrwatson_de/status/1495553400347533313) of this function
 - Save/load/insert code snippets
 - Generate code automatically
   - by 'multiplying' steps by the values on the clipboard (seeing is believing!)
