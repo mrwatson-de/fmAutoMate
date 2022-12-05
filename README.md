@@ -58,7 +58,7 @@ Yeah?
 
 Well, now you have it!
 
-Not only that, but also [fmAutoMate-Service extensions](fmAutoMate-Service/README.md) for your calculation editor!
+Not only that, but also [fmAutoMate-Service extensions](fmAutoMate-Services/README.md) for your calculation editor!
 
 Have fun!
 
