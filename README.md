@@ -3,9 +3,11 @@
 # fmAutoMate
 [Towards a FileMaker IDE]
 
-A tool for FileMaker developers from MrWatson which extends and automates your script workspace using the MBS-Plugin [and MrWatson's fmScriptWorkspace Module]
+A tool for FileMaker developers which extends and automates your script workspace and FileMaker environment to provide you with some awesome functions to boost developer productivity - including making the impossible possible.
+
+Like most tools from MrWatson, it builds on fantastic MBS-Plugin functions. it also integrates with MrWatson's fmIDE module for maximum integration and developer fun.
  
-[Copyright](LICENSE) © 2021 MrWatson of www.mrwatson.de 
+[Copyright](LICENSE) © 2021-3 MrWatson of www.mrwatson.de 
 
 ## Welcome to the closest thing to a FileMaker IDE you can get
 
@@ -42,6 +44,8 @@ Or a menu in the script workspace where you can:
 - Copy layout buttons and insert their steps into a script *directly* (really? Hell, yeah! 😎👍)
 - Maybe even add the necessary parameters to a Perform Script call - completely automatically? (*)
 - Oh yeah, and what about "Dock Window to Script Workspace" for those annoying floating windows you get from the debugger? 🤩 Wouldn't that just be phenomenal?
+- Copy the current column of data from the active field?
+  - Just type ⌘⌃K cc ⏎
 
 
 ...all of which is open source?
