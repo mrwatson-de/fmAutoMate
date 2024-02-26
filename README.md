@@ -64,8 +64,8 @@ Like most tools from MrWatson, fmAutoMate builds on fantastic MBS-Plugin functio
   - **FileMaker**
     - but, of course, you already have that.
   - [MBS-Plugin][MBS-Plugin]
-    - Version 0.13 of fmAutoMate needs at least MBS Plugin version 11.2.0.07 to improve the search function to find the correct line - even when the script has multi-line comments.
-    - However, I recommend simply keeping your MBS Plugin up to date, because fmAutoMate and the MBS Plugin develop at a faster rate than this documentation. :)
+    - Version 0.55.1 of fmAutoMate needs at least MBS Plugin version 13.2.0.07 to improve the step search function to find the correct line - even when the script has multi-line comments.
+    - However, **I recommend simply keeping your MBS Plugin up to date**, because fmAutoMate and the MBS Plugin develop at a faster rate than this documentation. :)
 
 See [Integrations](#integrations) below for further optional dependencies.
 
