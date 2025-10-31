@@ -3,13 +3,216 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>521.1</string>
+	<string>528</string>
 	<key>AMApplicationVersion</key>
 	<string>2.10</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
 	<array>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.string</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.1.1</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+					<string>TextEdit</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>buttonAffirmative</key>
+					<dict/>
+					<key>buttonNegative</key>
+					<dict/>
+					<key>defaultAnswer</key>
+					<dict>
+						<key>tokenizedValue</key>
+						<array>
+							<string>this_is_a_string
+And another one
+
+And-Yet-A-a-Third
+   and  this is     also    allowed
+ThisWasUpperCamelCase
+andThisWasLowerCamelCase
+
+Bloß keine Änderungen
+
+</string>
+						</array>
+					</dict>
+					<key>defaultMessage</key>
+					<dict>
+						<key>tokenizedValue</key>
+						<array>
+							<string>Test</string>
+						</array>
+					</dict>
+					<key>requireInput</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.string</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Ask for Text.action</string>
+				<key>ActionName</key>
+				<string>Ask for Text</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>buttonAffirmative</key>
+					<string>OK</string>
+					<key>buttonNegative</key>
+					<string>Cancel</string>
+					<key>defaultAnswer</key>
+					<string>this_is_a_string
+And another one
+
+And-Yet-A-a-Third
+   and  this is     also    allowed
+ThisWasUpperCamelCase
+andThisWasLowerCamelCase
+
+Bloß keine Änderungen
+
+</string>
+					<key>defaultMessage</key>
+					<string>Test</string>
+					<key>requireInput</key>
+					<false/>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.TextInputDialog</string>
+				<key>CFBundleVersion</key>
+				<string>1.1.1</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<true/>
+				<key>CanShowWhenRun</key>
+				<false/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryText</string>
+				</array>
+				<key>Class Name</key>
+				<string>AMAskForTextAction</string>
+				<key>Disabled</key>
+				<true/>
+				<key>InputUUID</key>
+				<string>A1BA9323-E45F-4619-A9B2-531308E0BA3A</string>
+				<key>Keywords</key>
+				<array>
+					<string>Text</string>
+					<string>Ask</string>
+					<string>Prompt</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>4BF362F7-0905-4D45-BADF-37097DE46F06</string>
+				<key>UUID</key>
+				<string>3E897B61-6B9B-4CE0-B28E-3E117E4A012B</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+					<string>TextEdit</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>defaultAnswer</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+					<key>1</key>
+					<dict>
+						<key>default value</key>
+						<string>OK</string>
+						<key>name</key>
+						<string>buttonAffirmative</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>1</string>
+					</dict>
+					<key>2</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>defaultMessage</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>2</string>
+					</dict>
+					<key>3</key>
+					<dict>
+						<key>default value</key>
+						<string>Cancel</string>
+						<key>name</key>
+						<string>buttonNegative</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>3</string>
+					</dict>
+					<key>4</key>
+					<dict>
+						<key>default value</key>
+						<false/>
+						<key>name</key>
+						<string>requireInput</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>4</string>
+					</dict>
+				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
+				<key>isViewVisible</key>
+				<integer>0</integer>
+				<key>location</key>
+				<string>432.500000:164.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Ask for Text.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<integer>0</integer>
+		</dict>
 		<dict>
 			<key>action</key>
 			<dict>
@@ -51,17 +254,27 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>source</key>
-					<string>/*
-
-
-2024-08-16 @mrwatson-de Changed cr and lf markers to be more visible
-*/
-
-function run(input, parameters) {		var str = input[0]	const app = Application.currentApplication()	app.includeStandardAdditions = true		const LOWERCASE = 'lowercase'	const UPPERCASE = 'UPPERCASE'	const TITLE_CASE = 'Title Case'	const NORMAL_CASE = 'Normal case'		const LOWER_CAMEL_CASE = 'lowerCamelCase'	const UPPER_CAMEL_CASE = 'UpperCamelCase'	const SPLIT_CAMEL_CASE = 'split⁁Camel⁁Case'	const LOWER_SNAKE_CASE = 'lower_snake_case'	const LOWER_KEBAB_CASE = 'lower-kebab-case'	const SCREAMING_SNAKE_CASE = 'SCREAMING_SNAKE_CASE'	const SCREAMING_KEBAB_CASE = 'SCREAMING-KEBAB-CASE'		const REMOVE_LINE_BREAKS = 'Remove line breaks'	const REPLACE_LINE_BREAKS_WITH_SPACE = 'Replace line breaks with space'		const CRLF = 'CRLF'	const CR = 'CR'	const LF = 'LF'	    const SHOW_LINE_BREAKS = 'Show line breaks'	const UNSHOW_LINE_BREAKS = 'Unshow line breaks'	const BUTTON_CALCULATE = 'Calculate'	const CALCULATE_JAVASCRIPT = 'Calculate (JavaScript)'	const EVALUATE_JAVASCRIPT = 'Evaluate (JavaScript)'	const ENCODE_FOR_URL = 'fmIDE &gt; Encode for URL'	const FMIDE_LINK_TO_SCRIPT = 'fmIDE &gt; Link to Script'		const ADD_LINE_NUMBERS = "Add line numbers"	const ADD_JSON_ARRAY_PREFIX = "Add JSON Array Prefix"	const REMOVE_LINE_NUMBERS = "Remove line numbers"	const REMOVE_JSON_ARRAY_PREFIX = "Remove JSON Array Prefix"	const actionArray = [	  LOWERCASE,	  UPPERCASE,	  TITLE_CASE,	  NORMAL_CASE,	  '-',	  LOWER_CAMEL_CASE,	  UPPER_CAMEL_CASE,	  SPLIT_CAMEL_CASE,	  '-',	  LOWER_SNAKE_CASE,	  SCREAMING_SNAKE_CASE,	  LOWER_KEBAB_CASE,	  SCREAMING_KEBAB_CASE,	  '-',	  REMOVE_LINE_BREAKS,	  REPLACE_LINE_BREAKS_WITH_SPACE,	  SHOW_LINE_BREAKS,	  UNSHOW_LINE_BREAKS,	  '-',	  CR,	  CRLF,	  LF,	  '-',	  CALCULATE_JAVASCRIPT,	  EVALUATE_JAVASCRIPT,	  '-',	  ENCODE_FOR_URL,	  FMIDE_LINK_TO_SCRIPT,	  '-',	  ADD_LINE_NUMBERS,	  ADD_JSON_ARRAY_PREFIX,	  REMOVE_LINE_NUMBERS,	  REMOVE_JSON_ARRAY_PREFIX	  	  ]	const defaultAction = actionArray[0]	const dialogOptions = {	    withPrompt: "Do what?",	    defaultItems: [defaultAction]	}	const action = ''+app.chooseFromList(actionArray, dialogOptions)    var result = str	switch(action) {		  case LOWERCASE:	    var result = str.toLowerCase()		break			  case UPPERCASE:	    var result = str.toUpperCase()		break		  case TITLE_CASE:	    var result = getTitleCase(str)		break	  case NORMAL_CASE:	    var result = str.replaceAll(/[-_]/g,' ');		break	  case LOWER_CAMEL_CASE:	    var result = getLowerCamelCase(str)		break		  case UPPER_CAMEL_CASE:	    var result = getUpperCamelCase(str)		break	  case LOWER_SNAKE_CASE:	    var result = getLowerSnakeCase(str)		break		  case SPLIT_CAMEL_CASE:	    var result = getSplitCamelCase(str)		break	  case SCREAMING_SNAKE_CASE:	    var result = getLowerSnakeCase(str).toUpperCase()		break	  case LOWER_KEBAB_CASE:	    var result = getLowerKebabCase(str)		break		  case SCREAMING_KEBAB_CASE:	    var result = getLowerKebabCase(str).toUpperCase()		break	  case CR:	    var result = replaceLinebreaks(str, "\r")		break			  case CRLF:	    var result = replaceLinebreaks(str, "\r\n")		break			  case LF:	    var result = replaceLinebreaks(str, "\n")		break			  case REMOVE_LINE_BREAKS:	    var result = replaceLinebreaks(str, "")		break			  case REPLACE_LINE_BREAKS_WITH_SPACE:	    var result = replace_linebreaks(str, " ")		break			  case SHOW_LINE_BREAKS:	    var TEMP = 'asdfghzuztrewqpiuzhjkl';
-		var CRPLACEHOLDER = '&lt;CR&gt;';//'␍';
-		var LFPLACEHOLDER = '&lt;LF&gt;';//'␊';
-		var CRLFPLACEHOLDER = CRPLACEHOLDER+LFPLACEHOLDER;
-		var result = str.replace(/\r\n/g, CRLFPLACEHOLDER+TEMP).replace(/\r/g, CRPLACEHOLDER+TEMP).replace(/\n/g, LFPLACEHOLDER+TEMP).replaceAll(TEMP,'\n');		break	  case UNSHOW_LINE_BREAKS:	    var result = str.replace(/&lt;CR&gt;&lt;LF&gt;\n/g, '\r\n').replace(/&lt;CR&gt;\n/g, '\r').replace(/&lt;LF&gt;\n/g, '\n');		break	  case CALCULATE_JAVASCRIPT://		try {			var str = app.displayDialog( "Calculate", {			  defaultAnswer: str,			  buttons: ["Cancel", BUTTON_CALCULATE],			  defaultButton: BUTTON_CALCULATE			}).textReturned//		} catch {//		  break//		}	  case EVALUATE_JAVASCRIPT:	    try {	      var result = ''+eval (str)		} catch(error) {		  var result = error.toString()		}		break			  case ENCODE_FOR_URL:	    var result = encodeURIComponent(str)		break			  case FMIDE_LINK_TO_SCRIPT:	    var result = ''+'fmp://$/?script=fmIDE&amp;$script_name='+encodeURIComponent( str )		break	  case ADD_LINE_NUMBERS:			var EOL = getEOL( str ) ;		var result = str.split(/\r|\r?\n/).map((line, index) =&gt; `${index + 1}. ${line}`).join(EOL)		break	  case ADD_JSON_ARRAY_PREFIX:		var EOL = getEOL( str ) ;		var result = str.split(/\r|\r?\n/).map((line, index) =&gt; `[${index}].${line}`).join(EOL)		break	  case	      REMOVE_LINE_NUMBERS:		var EOL = getEOL( str ) ;		var result = str.replace(/^\d+\.?\s?/mg,'').replace(/\n/g,EOL)		break	  case	      REMOVE_JSON_ARRAY_PREFIX:		var EOL = getEOL( str ) ;		var result = str.replace(/^\[\d+\]\.\s?/mg,'').replace(/\n/g,EOL)		break	  case	    0:		app.displayDialog('Not yet implemented')		break			}	return result;}/*\r = CR = return = FM EOL\n = LF = new line = *NIX EOL\r\n = CRLF = Windows EOL\u2028 = LS = line separator\u2029 = PS = paragraph separator|\u2028|\u2029TESTME/FIXME ...The regex must be optimised to recognise \r\n as ONE EOL (\r\n)rather than as TWO (\r)(\n)*/function replaceLinebreaks (str, repl) {    return str	  .replace( /(\r\n|\n|\r)/gm, repl );}function getUpperCamelCase(str) {  return str    .replace(/[-_]+/g,' ')    .replace(/\w\S*/g, word =&gt; {      return word.charAt(0).toUpperCase() +             word.slice(1).toLowerCase();      })	.replace(/(\s)/g,'');}function getLowerCamelCase(str) {  return getLowerCaseFirst(	str    .replace(/[-_]+/g,' ')	.replace(/\w\S*/g, word =&gt; {       return word.charAt(0).toUpperCase() +              word.slice(1).toLowerCase();       })	.replace(/(\s*|_)/g,'')	);}function getSplitCamelCase(str) {  return str.replace(/[-_]+/g,'')    .split('')	.map((character,idx) =&gt; {      if (idx &gt; 1 &amp;&amp; character !== character.toLowerCase()) {        return ' ' + character;      } else if (character == ' ') {        return '';      } else {        return character;      }    })    .join('');}function getTitleCase(str) {  return str    .replace(/[-_]+/g,' ')    .replace(/\w\S*/g, word =&gt; {      return word.charAt(0).toUpperCase() +             word.slice(1).toLowerCase();      });}function getLowerCaseFirst(str) {  return str.charAt(0).toLowerCase() + str.slice(1)}function getLowerSnakeCase(str) {  return str    .replace(/(\s|_|-)+/g, '_')	.toLowerCase();}function getLowerKebabCase(str) {  return str    .replace(/(\s|_|-)+/g, '-')	.toLowerCase();}function getEOL(str) {  const eolMatch = str.match(/\r\n|\r|\n/); // Find first line ending  return eolMatch ? eolMatch[0] : ""; // Return line ending or empty string}</string>
+					<string>/*2025-11-01 @mrwatson-de v1.1
+improve_to
+convert_camel_case_directly_to_snake_case_or_kebab_case.
+process_multiple_lines
+trim_lines
+handle_unicode
+add_automator_test_code
+24-08-16 @mrwatson-de Changed cr and lf markers to be more visible*/function run(input, parameters) {		var str = input[0]	const app = Application.currentApplication()	app.includeStandardAdditions = true		const LOWERCASE = 'lowercase'	const UPPERCASE = 'UPPERCASE'	const TITLE_CASE = 'Title Case'	const NORMAL_CASE = 'Normal case'		const LOWER_CAMEL_CASE = 'lowerCamelCase'	const UPPER_CAMEL_CASE = 'UpperCamelCase'	const SPLIT_CAMEL_CASE = 'split⁁Camel⁁Case'	const LOWER_SNAKE_CASE = 'lower_snake_case'	const LOWER_KEBAB_CASE = 'lower-kebab-case'	const SCREAMING_SNAKE_CASE = 'SCREAMING_SNAKE_CASE'	const SCREAMING_KEBAB_CASE = 'SCREAMING-KEBAB-CASE'		const REMOVE_LINE_BREAKS = 'Remove line breaks'	const REPLACE_LINE_BREAKS_WITH_SPACE = 'Replace line breaks with space'		const CRLF = 'CRLF'	const CR = 'CR'	const LF = 'LF'	    const SHOW_LINE_BREAKS = 'Show line breaks'	const UNSHOW_LINE_BREAKS = 'Unshow line breaks'	const BUTTON_CALCULATE = 'Calculate'	const CALCULATE_JAVASCRIPT = 'Calculate (JavaScript)'	const EVALUATE_JAVASCRIPT = 'Evaluate (JavaScript)'	const ENCODE_FOR_URL = 'fmIDE &gt; Encode for URL'	const FMIDE_LINK_TO_SCRIPT = 'fmIDE &gt; Link to Script'		const ADD_LINE_NUMBERS = "Add line numbers"	const ADD_JSON_ARRAY_PREFIX = "Add JSON Array Prefix"	const REMOVE_LINE_NUMBERS = "Remove line numbers"	const REMOVE_JSON_ARRAY_PREFIX = "Remove JSON Array Prefix"	const actionArray = [	  LOWERCASE,	  UPPERCASE,	  TITLE_CASE,	  NORMAL_CASE,	  '-',	  LOWER_CAMEL_CASE,	  UPPER_CAMEL_CASE,	  SPLIT_CAMEL_CASE,	  '-',	  LOWER_SNAKE_CASE,	  SCREAMING_SNAKE_CASE,	  LOWER_KEBAB_CASE,	  SCREAMING_KEBAB_CASE,	  '-',	  REMOVE_LINE_BREAKS,	  REPLACE_LINE_BREAKS_WITH_SPACE,	  SHOW_LINE_BREAKS,	  UNSHOW_LINE_BREAKS,	  '-',	  CR,	  CRLF,	  LF,	  '-',	  CALCULATE_JAVASCRIPT,	  EVALUATE_JAVASCRIPT,	  '-',	  ENCODE_FOR_URL,	  FMIDE_LINK_TO_SCRIPT,	  '-',	  ADD_LINE_NUMBERS,	  ADD_JSON_ARRAY_PREFIX,	  REMOVE_LINE_NUMBERS,	  REMOVE_JSON_ARRAY_PREFIX	  	  ]	const defaultAction = actionArray[0]	const dialogOptions = {	    withPrompt: "Do what?",	    defaultItems: [defaultAction]	}	const action = ''+app.chooseFromList(actionArray, dialogOptions)    var result = str	switch(action) {		  case LOWERCASE:	    var result = str.toLowerCase()		break			  case UPPERCASE:	    var result = str.toUpperCase()		break		  case TITLE_CASE:	    var result = getTitleCase(str)		break	  case NORMAL_CASE:	    var result = str.replaceAll(/[-_]/g,' ');		break	  case LOWER_CAMEL_CASE:	    var result = getLowerCamelCase(str)		break		  case UPPER_CAMEL_CASE:	    var result = getUpperCamelCase(str)		break	  case LOWER_SNAKE_CASE:	    var result = getLowerSnakeCase(str)		break		  case SPLIT_CAMEL_CASE:	    var result = getSplitCamelCase(str)		break	  case SCREAMING_SNAKE_CASE:	    var result = getLowerSnakeCase(str).toUpperCase()		break	  case LOWER_KEBAB_CASE:	    var result = getLowerKebabCase(str)		break		  case SCREAMING_KEBAB_CASE:	    var result = getLowerKebabCase(str).toUpperCase()		break	  case CR:	    var result = replaceLinebreaks(str, "\r")		break			  case CRLF:	    var result = replaceLinebreaks(str, "\r\n")		break			  case LF:	    var result = replaceLinebreaks(str, "\n")		break			  case REMOVE_LINE_BREAKS:	    var result = replaceLinebreaks(str, "")		break			  case REPLACE_LINE_BREAKS_WITH_SPACE:	    var result = replace_linebreaks(str, " ")		break			  case SHOW_LINE_BREAKS:	    var TEMP = 'asdfghzuztrewqpiuzhjkl';		var CRPLACEHOLDER = '&lt;CR&gt;';//'␍';		var LFPLACEHOLDER = '&lt;LF&gt;';//'␊';		var CRLFPLACEHOLDER = CRPLACEHOLDER+LFPLACEHOLDER;		var result = str.replace(/\r\n/g, CRLFPLACEHOLDER+TEMP).replace(/\r/g, CRPLACEHOLDER+TEMP).replace(/\n/g, LFPLACEHOLDER+TEMP).replaceAll(TEMP,'\n');		break	  case UNSHOW_LINE_BREAKS:	    var result = str.replace(/&lt;CR&gt;&lt;LF&gt;\n/g, '\r\n').replace(/&lt;CR&gt;\n/g, '\r').replace(/&lt;LF&gt;\n/g, '\n');		break	  case CALCULATE_JAVASCRIPT://		try {			var str = app.displayDialog( "Calculate", {			  defaultAnswer: str,			  buttons: ["Cancel", BUTTON_CALCULATE],			  defaultButton: BUTTON_CALCULATE			}).textReturned//		} catch {//		  break//		}	  case EVALUATE_JAVASCRIPT:	    try {	      var result = ''+eval (str)		} catch(error) {		  var result = error.toString()		}		break			  case ENCODE_FOR_URL:	    var result = encodeURIComponent(str)		break			  case FMIDE_LINK_TO_SCRIPT:	    var result = ''+'fmp://$/?script=fmIDE&amp;$script_name='+encodeURIComponent( str )		break	  case ADD_LINE_NUMBERS:			var EOL = getEOL( str ) ;		var result = str.split(/\r|\r?\n/).map((line, index) =&gt; `${index + 1}. ${line}`).join(EOL)		break	  case ADD_JSON_ARRAY_PREFIX:		var EOL = getEOL( str ) ;		var result = str.split(/\r|\r?\n/).map((line, index) =&gt; `[${index}].${line}`).join(EOL)		break	  case	      REMOVE_LINE_NUMBERS:		var EOL = getEOL( str ) ;		var result = str.replace(/^\d+\.?\s?/mg,'').replace(/\n/g,EOL)		break	  case	      REMOVE_JSON_ARRAY_PREFIX:		var EOL = getEOL( str ) ;		var result = str.replace(/^\[\d+\]\.\s?/mg,'').replace(/\n/g,EOL)		break	  case	    0:		app.displayDialog('Not yet implemented')		break			}	return result;}/*\r = CR = return = FM EOL\n = LF = new line = *NIX EOL\r\n = CRLF = Windows EOL\u2028 = LS = line separator\u2029 = PS = paragraph separator|\u2028|\u2029TESTME/FIXME ...The regex must be optimised to recognise \r\n as ONE EOL (\r\n)rather than as TWO (\r)(\n)*/function replaceLinebreaks (str, repl) {    return str	  .replace( /(\r\n|\n|\r)/gm, repl );}function getUpperCamelCase(str) {  return getTitleCase(str).replace(/[ \t\f\v]+/g, '');
+}function getLowerCamelCase(str) {  return getLowerCaseFirst(getUpperCamelCase(str))}function getSplitCamelCase(str) {  return str.replace(/[-_]+/g,'')    .split('')	.map((character,idx) =&gt; {      if (idx &gt; 1 &amp;&amp; character !== character.toLowerCase()) {        return ' ' + character;      } else if (character == ' ') {        return '';      } else {        return character;      }    })    .join('');}function getTitleCase(str) {  return str    .replace(/[-_]+/g,' ')    /* Match every word start using Unicode property escapes */
+    .replace(
+      /\p{L}[\p{L}\p{N}\p{Pc}\p{M}]*/gu,
+      word =&gt; word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+    );
+}function getLowerCaseFirst(str) {
+  return str.replace(/^./gm, c =&gt; c.toLowerCase());
+}function getUpperCaseFirst(str) {
+  return str.replace(/^./gm, c =&gt; c.toUpperCase());
+}function getLowerSnakeCase(str) {  var seperator = '_';   return str
+    /* trim */    .replace(/^[ |\t|_|-]+|[ |\t|_|-]+$/gm, '')    /* compact 'spacing character' to a single seperator  */	.replace(/( |\t|_|-)+/gm, seperator)    /* add a single '-' before CamelCase boundaries */	.replace(/(\p{Ll})(\p{Lu})/gu, '$1' + seperator + '$2')	.toLowerCase();}function getLowerKebabCase(str) {
+  var seperator = '-';   return str
+    /* trim */    .replace(/^[ |\t|_|-]+|[ |\t|_|-]+$/gm, '')    /* compact 'spacing character' to a single seperator  */	.replace(/( |\t|_|-)+/gm, seperator)    /* add a single '-' before CamelCase boundaries */	.replace(/(\p{Ll})(\p{Lu})/gu, '$1' + seperator + '$2')	.toLowerCase();}function getEOL(str) {  const eolMatch = str.match(/\r\n|\r|\n/); // Find first line ending  return eolMatch ? eolMatch[0] : ""; // Return line ending or empty string}</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.RunJavaScript</string>
@@ -116,16 +329,115 @@ function run(input, parameters) {		var str = input[0]	const app = Applicatio
 				<key>isViewVisible</key>
 				<integer>1</integer>
 				<key>location</key>
-				<string>499.500000:629.000000</string>
+				<string>432.500000:747.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run JavaScript.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>*</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict/>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>*</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/View Results.action</string>
+				<key>ActionName</key>
+				<string>View Results</string>
+				<key>ActionParameters</key>
+				<dict/>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.LogOutput</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<true/>
+				<key>CanShowWhenRun</key>
+				<false/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>LogOutputAction</string>
+				<key>Disabled</key>
+				<true/>
+				<key>InputUUID</key>
+				<string>25A76C34-F97B-40C6-99B1-EEA326FC9289</string>
+				<key>Keywords</key>
+				<array>
+					<string>Display</string>
+					<string>Show</string>
+					<string>Log</string>
+					<string>Output</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>5733E79B-C00D-4697-BAF8-FE5EFE560A15</string>
+				<key>UUID</key>
+				<string>472C4EB8-151F-4BF1-89F5-3D3A8A2C0F81</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict/>
+				<key>conversionLabel</key>
+				<integer>0</integer>
+				<key>isViewVisible</key>
+				<integer>0</integer>
+				<key>location</key>
+				<string>432.500000:788.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/View Results.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<integer>0</integer>
+		</dict>
 	</array>
 	<key>connectors</key>
-	<dict/>
+	<dict>
+		<key>1E824B84-87A7-415B-A7EB-0B6C163FAF9F</key>
+		<dict>
+			<key>from</key>
+			<string>3E897B61-6B9B-4CE0-B28E-3E117E4A012B - 3E897B61-6B9B-4CE0-B28E-3E117E4A012B</string>
+			<key>to</key>
+			<string>D3E4E2AB-B9DC-4C2D-A00B-73132F49FD8B - D3E4E2AB-B9DC-4C2D-A00B-73132F49FD8B</string>
+		</dict>
+		<key>BA776CCA-7539-4EDF-BD1C-AE32D9923C21</key>
+		<dict>
+			<key>from</key>
+			<string>D3E4E2AB-B9DC-4C2D-A00B-73132F49FD8B - D3E4E2AB-B9DC-4C2D-A00B-73132F49FD8B</string>
+			<key>to</key>
+			<string>472C4EB8-151F-4BF1-89F5-3D3A8A2C0F81 - 472C4EB8-151F-4BF1-89F5-3D3A8A2C0F81</string>
+		</dict>
+	</dict>
 	<key>workflowMetaData</key>
 	<dict>
 		<key>applicationBundleIDsByPath</key>
